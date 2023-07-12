@@ -1,0 +1,14 @@
+nddev/inventapp/productservice/config/TenantContext.class
+nddev/inventapp/productservice/ProductServiceApplication.class
+nddev/inventapp/productservice/dto/ProductRequest.class
+nddev/inventapp/productservice/dto/ProductRequest$ProductRequestBuilder.class
+nddev/inventapp/productservice/model/Product$ProductBuilder.class
+nddev/inventapp/productservice/config/WebConfiguration.class
+nddev/inventapp/productservice/dto/ProductResponse.class
+nddev/inventapp/productservice/repository/ProductRepository.class
+nddev/inventapp/productservice/controller/ProductController.class
+nddev/inventapp/productservice/model/Product.class
+nddev/inventapp/productservice/service/ProductService.class
+nddev/inventapp/productservice/dto/ProductResponse$ProductResponseBuilder.class
+nddev/inventapp/productservice/config/TenantRequestInterceptor.class
+nddev/inventapp/productservice/model/event/ProductCreatedEvent.class

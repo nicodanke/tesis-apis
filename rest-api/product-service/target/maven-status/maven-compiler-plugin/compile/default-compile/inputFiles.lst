@@ -1,0 +1,11 @@
+/Users/nicodanke/development/inventapp/inventapp-back/product-service/src/main/java/nddev/inventapp/productservice/model/Product.java
+/Users/nicodanke/development/inventapp/inventapp-back/product-service/src/main/java/nddev/inventapp/productservice/controller/ProductController.java
+/Users/nicodanke/development/inventapp/inventapp-back/product-service/src/main/java/nddev/inventapp/productservice/config/TenantContext.java
+/Users/nicodanke/development/inventapp/inventapp-back/product-service/src/main/java/nddev/inventapp/productservice/repository/ProductRepository.java
+/Users/nicodanke/development/inventapp/inventapp-back/product-service/src/main/java/nddev/inventapp/productservice/config/TenantRequestInterceptor.java
+/Users/nicodanke/development/inventapp/inventapp-back/product-service/src/main/java/nddev/inventapp/productservice/ProductServiceApplication.java
+/Users/nicodanke/development/inventapp/inventapp-back/product-service/src/main/java/nddev/inventapp/productservice/service/ProductService.java
+/Users/nicodanke/development/inventapp/inventapp-back/product-service/src/main/java/nddev/inventapp/productservice/model/event/ProductCreatedEvent.java
+/Users/nicodanke/development/inventapp/inventapp-back/product-service/src/main/java/nddev/inventapp/productservice/dto/ProductRequest.java
+/Users/nicodanke/development/inventapp/inventapp-back/product-service/src/main/java/nddev/inventapp/productservice/config/WebConfiguration.java
+/Users/nicodanke/development/inventapp/inventapp-back/product-service/src/main/java/nddev/inventapp/productservice/dto/ProductResponse.java

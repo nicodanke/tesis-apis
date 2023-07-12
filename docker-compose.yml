@@ -1,0 +1,55 @@
+version: '3'
+services:
+  # POSTGRES Product Config
+  user-db:
+    container_name: product-db
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: product_service
+      POSTGRES_USER: nddev
+      POSTGRES_PASSWORD: root
+      PGDATA: /data/postgres
+    volumes:
+      - ./product-db:/data/postgres
+    expose:
+      - "15543"
+    ports:
+      - "15543:5543"
+    command: -p 5543
+    restart: unless-stopped
+
+  # POSTGRES Sale Config
+  sale-db:
+    container_name: sale-db
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: sale_service
+      POSTGRES_USER: nddev
+      POSTGRES_PASSWORD: root
+      PGDATA: /data/postgres
+    volumes:
+      - ./sale-db:/data/postgres
+    expose:
+      - "15544"
+    ports:
+      - "15544:5544"
+    command: -p 5544
+    restart: unless-stopped
+
+  # POSTGRES Supplier Config
+  supplier-db:
+    container_name: supplier-db
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: supplier_service
+      POSTGRES_USER: nddev
+      POSTGRES_PASSWORD: root
+      PGDATA: /data/postgres
+    volumes:
+      - ./supplier-db:/data/postgres
+    expose:
+      - "15545"
+    ports:
+      - "15545:5545"
+    command: -p 5545
+    restart: unless-stopped

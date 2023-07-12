@@ -1,0 +1,7 @@
+### DBs ###
+/supplier-db
+/product-db
+/sale-db
+
+### Mac OS ###
+.DS_Store
