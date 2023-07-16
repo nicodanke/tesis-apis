@@ -1,0 +1,2 @@
+create sequence IF NOT EXISTS product_sequence start with 100 increment by 1;
+create table t_product (id bigint not null, name varchar(255), description varchar(255), supplier_id bigint, primary key (id));

@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option java_multiple_files = true;
+option java_package = "nddev.tesis.supplierservice.service";
+option java_outer_classname = "SuppliersProto";
+
+message SupplierResponseList {
+  repeated SupplierResponse supplierResponses = 1;
+}
+
+message SupplierResponse {
+  int64 id = 1;
+  string name = 2;
+  string address = 3;
+  optional string phone = 4;
+  string email = 5;
+  repeated ProductWithSalesResponse2 products = 6;
+}
+
+message ProductWithSalesResponse2 {
+  int64 id = 1;
+  string name = 2;
+  string description = 3;
+  int32 salesQuantity = 4;
+}
+
+service SupplierService {
+  rpc getAllSuppliersWithTopProducts(google.protobuf.Empty) returns (SupplierResponseList);
+}
