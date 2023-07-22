@@ -1,0 +1,23 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option java_package = "nddev.tesis.saleservice.service";
+option java_outer_classname = "SalesProto";
+
+message SaleRequest {
+  int64 productId = 1;
+}
+
+message SaleResponseList {
+  repeated SaleResponse saleResponses = 1;
+}
+
+message SaleResponse {
+  int64 id = 1;
+  int64 productId = 2;
+  int32 quantity = 3;
+  double unitPrice = 4;
+}
+
+service SaleService {
+  rpc getSalesByProductId(SaleRequest) returns (SaleResponseList);
+}
